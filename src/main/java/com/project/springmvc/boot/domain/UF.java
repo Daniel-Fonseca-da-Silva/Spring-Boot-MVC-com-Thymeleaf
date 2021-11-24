@@ -2,6 +2,7 @@ package com.project.springmvc.boot.domain;
 
 import lombok.*;
 
+@AllArgsConstructor
 public enum UF {
 
     AC("AC", "Acre"),
@@ -39,8 +40,4 @@ public enum UF {
     @Setter
     private String descricao;
 
-    UF(String sigla, String descricao) {
-        this.sigla = sigla;
-        this.descricao = descricao;
-    }
 }
